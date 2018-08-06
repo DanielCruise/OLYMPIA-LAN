@@ -256,7 +256,7 @@
                     clearInterval(rejectAnswer);
                     setTimeout(function () {
                         rejectAnswer = setInterval(obstacleLocks, 10);
-                    }, 16000);
+                    }, 15000);
                     setTimeout(function () {
                         timePane.innerHTML = obstacleTime;
                     }, 20000);
@@ -269,7 +269,7 @@
                     }, 1000);
                     y = setInterval(function () {
                         rowAnswer(time);
-                        if (time < 0) {
+                        if (time <= 0) {
                             clearInterval(z);
                             clearInterval(y);
                             time = 0;

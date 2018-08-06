@@ -301,7 +301,7 @@ $conn->close();
     function startOrContinue() {
         timeVid.play();
         setTimeout(function () {
-            receive = setInterval(receivingGrantedSignal, 1);
+            receive = setInterval(receivingGrantedSignal, 3);
         }, 10);
         $.ajax({
             url: "AllowGranted.php",

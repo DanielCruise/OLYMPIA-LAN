@@ -235,7 +235,7 @@
                     clearInterval(rejectAnswer);
                     setTimeout(function () {
                         rejectAnswer = setInterval(accelerationLocks, 1);
-                    }, 31000);
+                    }, 30000);
                     setTimeout(function () {
                         timePane.innerHTML = accelerationTime;
                     }, 35000);
@@ -252,7 +252,7 @@
                     console.log(time);
                     y = setInterval(function () {
                         acceAnswer(time);
-                        if (time < 0) {
+                        if (time <= 0) {
                             clearInterval(t);
                             clearInterval(z);
                             clearInterval(y);
